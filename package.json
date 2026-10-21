@@ -1,0 +1,13 @@
+{
+  "name": "card-film",
+  "version": "1.0.0",
+  "description": "12-beat card-film generator: pure procedural canvas, 15s, 16:9 + 9:16, edited to musical onsets",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "qa": "node templates/batch.js templates/film.html h \"1.2,5.9,11.9,14.9\" out/qa"
+  },
+  "dependencies": {
+    "puppeteer-core": "^25.15.0"
+  }
+}
