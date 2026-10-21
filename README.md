@@ -57,7 +57,7 @@ cd ~/.workbuddy/skills/card-film
 # 1) 改 templates/film.html 顶部的四个 EDIT ZONE（颜色 / 文案 / 12 张卡 / 切点）
 
 # 2) 抽几帧看版式（2 秒出图，不要靠肉眼估）
-node templates/batch.js templates/film.html h "1.2,5.9,11.9,14.9" out/qa
+node templates/batch.js templates/film.html h "1.2,5.5,11.9,14.9" out/qa
 python scripts/probe.py out/qa/h_1.20.png 60 760 dark 0.72
 
 # 3) 出片：横竖双版 + 封面 + 联系表

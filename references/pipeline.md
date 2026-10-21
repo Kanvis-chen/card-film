@@ -28,7 +28,7 @@ pip install numpy scipy         # 只用 bgm.py 才需要
 
 ```bash
 # 抽单帧（改版式时的快速循环，2 秒出图）
-node templates/batch.js film.html h "1.2,5.9,11.9,14.9" out/qa
+node templates/batch.js film.html h "1.2,5.5,11.9,14.9" out/qa
 
 # 出一条完整的
 python scripts/build.py --html film.html --audio music.wav --name MyFilm --dur 15.1

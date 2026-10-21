@@ -71,9 +71,11 @@ python scripts/cuts.py plan music.wav --n 12 --start 0.8 --end 15.1 --tail 3.9
 不要靠眼睛。抽单帧，然后量：
 
 ```bash
-node templates/batch.js film.html h "1.2,5.9,11.9,14.9" out/qa
+node templates/batch.js film.html h "1.2,5.5,11.9,14.9" out/qa
 python scripts/probe.py <frame.png> 60 760 dark 0.72      # 行投影
 ```
+
+抽帧时间要**避开 `CUTS` 里的切点**——正好落在边界上会抽到甩切的中途帧（画面糊、左栏空），那不是版式错了。
 
 `probe.py` 给出的行带（y 区间）跟版式锚点表对不上，就是字号或基线错了。中文长句一定要走 `fitText()` 按目标宽度反算，不要让浏览器自己决定宽度。
 

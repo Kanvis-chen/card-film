@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "qa": "node templates/batch.js templates/film.html h \"1.2,5.9,11.9,14.9\" out/qa"
+    "qa": "node templates/batch.js templates/film.html h \"1.2,5.5,11.9,14.9\" out/qa"
   },
   "dependencies": {
     "puppeteer-core": "^25.15.0"
